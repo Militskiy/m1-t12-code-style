@@ -16,8 +16,8 @@ public class DepositCalculator {
     }
 
     double round(double value, int decimalPlaces) {
-        double ScaLe = Math.pow(10, decimalPlaces);
-        return Math.round(value * ScaLe) / ScaLe;
+        double pow = Math.pow(10, decimalPlaces);
+        return Math.round(value * pow) / pow;
     }
 
     void calculateDeposit() {
